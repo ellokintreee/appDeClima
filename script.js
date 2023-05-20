@@ -23,9 +23,8 @@ function createValue(id){
 }
 
 function createApp(data){
-    let lon = data.coord.lon;
-    let lat =data.coord.lat;
-    let temp_min = data.main.temp;
+    const {coord:{lon, lat}, main:{temp, temp_min, temp_max}, weather:[array]} = data
+    
     
     let html = document.createElement("h1")
     let htmlLon = document.createElement("h1")
@@ -41,9 +40,11 @@ function createApp(data){
     main.append(tempMin)    
     main.append(html)
     main.append(htmlLon)
-  
-
 }
+
+
+
+
 function convertirGrados(grados) {
     var gradosCelsius = grados - 273.15 
     return gradosCelsius;
