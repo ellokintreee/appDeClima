@@ -1,0 +1,29 @@
+#game {
+    width: 600px;
+    height: 400px;
+    background-color: #000;
+    position: relative;
+  }
+  
+  #paddleA, #paddleB {
+    width: 10px;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+  }
+  
+  #paddleA {
+    left: 10px;
+  }
+  
+  #paddleB {
+    right: 10px;
+  }
+  
+  #ball {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+  }
+  
